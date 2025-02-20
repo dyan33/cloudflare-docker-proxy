@@ -16,15 +16,15 @@ CUSTOM_DOMAIN = "anydrop.site"
 
 [env.production]
 name = "cloudflare-docker-proxy"
-# routes = [
-#   { pattern = "docker.anydrop.site", custom_domain = true },
-#   { pattern = "quay.anydrop.site", custom_domain = true },
-#   { pattern = "gcr.anydrop.site", custom_domain = true },
-#   { pattern = "k8s-gcr.anydrop.site", custom_domain = true },
-#   { pattern = "k8s.anydrop.site", custom_domain = true },
-#   { pattern = "ghcr.anydrop.site", custom_domain = true },
-#   { pattern = "cloudsmith.anydrop.site", custom_domain = true },
-# ]
+routes = [
+  { pattern = "docker.anydrop.site", custom_domain = true },
+  { pattern = "quay.anydrop.site", custom_domain = true },
+  { pattern = "gcr.anydrop.site", custom_domain = true },
+  { pattern = "k8s-gcr.anydrop.site", custom_domain = true },
+  { pattern = "k8s.anydrop.site", custom_domain = true },
+  { pattern = "ghcr.anydrop.site", custom_domain = true },
+  { pattern = "cloudsmith.anydrop.site", custom_domain = true },
+]
 
 [env.production.vars]
 MODE = "production"
